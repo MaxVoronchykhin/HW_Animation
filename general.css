@@ -11,14 +11,27 @@ body {
     width: 60rem;
     height: 60rem;
     align-self: center;
+    transform: rotateY(360deg);
+    animation-name: earth_loop;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+
 }
 .moon {
     width: 20rem;
     height: 20rem;
     align-self: center;
-    border-radius: 50%; 
 }
 .animation {
     display: flex;
-    margin-left: 300px;
+    margin-left: 250px;
+}
+@keyframes earth_loop {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
