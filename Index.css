@@ -1,0 +1,9 @@
+@import url(../Reset.css/Reset.css);
+@import url(general.css);
+html,
+body {
+    font-size: 10px;
+}
+body {
+    height: 100vh;
+}
